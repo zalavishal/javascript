@@ -1,0 +1,324 @@
+<script>
+
+
+
+
+
+
+
+    // let n = 4;
+    // let str = ""
+
+    // for (let i = 1; i < n; i++) {
+    //     for (let j = 1; j<i; j++){
+    //         str += j;
+    //     }
+    //     str += "/n";
+    // }
+
+
+
+    // ---------duplicatsElement-------->
+
+    // const duplicatedArray = [1, 11, 22, 33, 33, 56, 58, 45, 68, 56]
+
+    // const duplicate = duplicatedArray.filter((element,index,array) => array.indexOf(element) !== index)
+    // console.log(duplicate);
+
+
+
+
+    // ---------duplicatsArray-------->
+
+    // const month = ['may', 'jan', 'march', 'may']
+
+    // const duplicate = month.reduce((Obj, month) => {
+    //     if (Obj[month] == undefined) {
+    //         Obj[month] = 1;
+    //         return Obj;
+    //     } else {
+    //         Obj[month]++;
+    //         return Obj;
+    //     }
+    // },{});
+    // console.log(duplicate);
+
+
+
+
+    // ---------given num is an integer?-------->
+
+    // const validatevalue= 10.05;
+
+    // console.log(isNaN(validatevalue));
+    // console.log(!isNaN(validatevalue));
+
+
+
+
+    // ---------sort number to array-------->
+
+    // const unsortedArr = [54, 51, 184, 5, 4, 8, 45, 4, 5, 48, 4]
+
+    // const sortedArr = unsortedArr.sort((a, b) => {
+    //     return a - b;
+    // });
+    // console.log(sortedArr);
+
+
+
+
+    // ---------uniq value in array-------->
+
+    // const Ids = [10, 165, 10, 20, 165]
+
+    // const uniq = Ids.filter((ele, index, arr) => arr.indexOf(ele) == index);
+    // console.log(uniq);
+
+
+
+
+    // ---------uniq value from array in sorted order-------->
+
+    // const value = [25,12,13,24,26,28]
+
+    // const uniq = value.filter((ele, index, array) => array.indexOf(ele) == index).sort((a,b)=>{
+    //     return a-b;
+    // })
+    // console.log(uniq);
+
+    // ans = (6) [12, 13, 24, 25, 26, 28]
+
+
+
+
+
+    // ---------find min and max value in numberd array-------->
+
+    // const value = [25,12,13,24,26,28]
+
+    //     function maxvalue(arr) {
+    //         return arr.reduce(function(prev,curr){
+    //             return prev > curr ? prev: curr;
+    //             return prev < curr ? prev: curr;
+    //         })
+    //     };
+    //     console.log(maxvalue(value));
+
+
+
+
+
+    // ---------upercase the first character in string-------->
+
+    // const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+
+    // let updatedDay=[];
+    // for (let day of days) {
+    //     day = day.charAt(0).toUpperCase() + day.substring(1);
+    //     updatedDay.push(day)
+    // }
+    // console.log(updatedDay);
+
+
+
+    //-------------check to strings are anagram for each other----------------->
+
+    // const val = "Atblkb";
+    // const val2 = "Bklbta";
+
+    // function finalval (val,val2){
+    //     var a = val.toLowerCase();
+    //     var b = val2.toLowerCase();
+
+    //     a = a.split("").sort().join('');
+    //     b = b.split("").sort().join('');
+
+    //     return a===b;
+    // }
+    // console.log(finalval(val,val2));
+
+
+
+
+
+    // ----------------extract fev fields from the given json object and form new array----------------->
+
+    // const input = {
+    //     "student":[
+    //         {
+    //             Name : "abc",
+    //             id : "1",
+    //             Email : "abc1@mail"
+    //         },
+    //         {
+    //             Name : "abc2",
+    //             id : "2",
+    //             Email : "abc2@mail"
+    //         },
+    //         {
+    //             Name : "abc3",
+    //             id : "3",
+    //             Email : "abc3@mail"
+    //         }
+    //     ]
+    // }
+
+    // const newop = input.student.map(function(item){
+    //     let studobj = {
+    //         name : item.Name,
+    //         id : item.id,
+    //         Email : item.Email
+    //     }
+    //     return studobj;
+    // })
+    // console.log(newop);
+
+
+
+
+
+    //---------------reverse------------->
+
+    // const str = 'welcom to';
+
+    // var reverseStr = reverseStrSeperator(str, "");
+
+    // function reverseStrSeperator(sampleIput, seperator) {
+    //     return sampleIput.split(seperator).reverse().join(seperator);
+    // }
+
+    // console.log(reverseStr);
+
+
+
+
+
+    //------------------delete element in array-------------->
+
+    // const studid=[12,12,15,1,65,6,2,19,4];
+    // const deleteAt = 1;
+
+    // const newStudentid = [...studid.slice(0,deleteAt),...studid.slice(deleteAt+1)];
+
+    // console.log(newStudentid);
+
+
+
+    // const original=[12,12,15,1,65,4];
+    // const deletEle = 15;
+
+    // const newArr = original.filter(item => item !== deletEle);
+    // console.log(newArr);
+
+
+
+
+
+    //------------add and replaced----------->
+
+    // const originalobj = {
+    //     name : 'vishal',
+    //     city : 'ahmedabad',
+    //     state : 'guj',
+    //     zip : 252525
+    // }
+
+    // const modifideobj = {
+    //     ...originalobj,
+    //     zip : 555555,
+    //     add : "add" 
+    // }
+    // console.log(modifideobj);
+
+
+
+
+    //-------------print num----------------->
+    
+    // let n = 10;
+    // let str = ""
+
+
+    // for (let i = 1; i <= n; i++) {
+    //     for (let j = 1; j <= i; j++) {
+    //         str += j;
+    //         // str += i;
+    //     }
+    //     str += "\n"
+    // }
+    // console.log(str);
+    // 12
+    // 123
+    // 1234
+    // 12345
+    // 123456
+    // 1234567
+    // 12345678
+    // 123456789
+    // 12345678910
+
+
+
+
+    //-------------find second largest value----------------->
+    
+    // const value = [1,2,3,4]
+    
+    // const largest = (arr) => {
+    //     firtslargestvalue = Math.max(...arr)
+    //     index = arr.indexOf(firtslargestvalue);
+    //     arr.splice(index,1)
+    //     secondlargestvalue = Math.max(...arr)
+    //     return (secondlargestvalue)
+    // }
+    // console.log(largest(value));
+    
+
+
+    
+    //-------------find the missing num in a given array 1 to 10----------------->
+    
+    // const number = [1,3,4,6,7,8,9,10]
+    // const emty = [];
+    
+    // const missingvalue = (arr) => {
+        //     const minvalue = Math.min(...arr)
+        //     const maxvalue = Math.max(...arr)
+        //     for (let i = minvalue; i < maxvalue; i++) {
+        //         if (arr.indexOf(i)<0){
+        //             emty.push(i)
+        //         }                
+        //     }
+        //     return (emty)
+        // }
+        // console.log(missingvalue(number));
+        
+
+        
+        
+        
+        //-------------even and odd num in array----------------->
+
+        // const number = [1,2,3,4,5,6,7,8,9,10]
+
+        // const findnum = number.filter((i)=>{
+        //     return i % 2 ===0    //(even num)
+        //     return i % 2 ==!0    //(odd num)
+        // })
+        // console.log(findnum);
+        
+
+
+        //--------------sum of element in the array------------>
+
+        // const sum = [1,2,3,4,5]
+        // const total = (sum)=>{
+        //     return sum.reduce((cur,pre)=>{
+        //         return pre+cur
+        //     })
+        // }
+        // console.log(total(sum));
+    
+
+</script>
